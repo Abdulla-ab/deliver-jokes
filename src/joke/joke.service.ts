@@ -7,7 +7,7 @@ import { ModeratedJoke } from "./joke.schema";
 export class JokeService {
     constructor(@InjectModel('ModeratedJoke') private moderatedJokeModel: Model<ModeratedJoke>) {}
 
-     async getJokeByType(type: string): Promise<ModeratedJoke> {
+    async getJokeByType(type: string): Promise<ModeratedJoke> {
         const jokes = await this.moderatedJokeModel.find({ type }).exec();
         if (jokes.length === 0) {
           throw new NotFoundException('No jokes found');

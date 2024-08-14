@@ -5,7 +5,7 @@ import { JokeService } from "./joke.service";
 export class JokeController {
     constructor(private readonly jokeService: JokeService) {}
 
-    @Get('joke')
+    @Get('')
     getJoke(@Query('type') type: string) {
         return this.jokeService.getJokeByType(type);
     }
