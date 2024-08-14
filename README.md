@@ -3,13 +3,13 @@
 Deliver Jokes Microservice - The Moderated Jokes are deliver here
 
 # Used technologies
-NestJs
-TypeScript
+NestJs,
+TypeScript,
 MongoDB/Mongoose
 
 # Used Tools
-NestJs Documentation
-Git
+NestJs Documentation,
+Git,
 ChatGPT
 
 ## Installation
